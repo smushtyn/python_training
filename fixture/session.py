@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
 class SessionHelper:
-    def __init__(self, app):
-        self.app = app
+
+    def __init__(self, app):    # конструктор, передаем в качестве параметра ссылку на Application
+        self.app = app          # ссылаемся на метод АПП, который в тестах инициализирует фикстуру
 
     def login(self, username, password):
         wd = self.app.wd
